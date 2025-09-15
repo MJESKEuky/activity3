@@ -40,7 +40,7 @@ def main():
         total_points = get_totalPoints()
         average_earned = (total_points / 1000) * 100
         letter_grade = get_letterGrade(average_earned)
-        print('Average score', average_earned)
+        print('Average score', average_earned,'%')
         print(f"Letter Grade: {letter_grade}")
 
         response = input("Do you want to continue? (yes/no): ")
@@ -50,3 +50,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
