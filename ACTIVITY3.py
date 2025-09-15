@@ -12,7 +12,7 @@ def get_totalPoints():
             if 0 <= total_points <= 1000:
                 return total_points
             else:
-                print("Error: Total points must be between 0 and 1000.")
+                print("Error: Total points must be between 0 and 1000. try again.")
         except ValueError:
             print("Error: Invalid input. Please enter a numeric value.")
 
@@ -40,6 +40,7 @@ def main():
         total_points = get_totalPoints()
         average_earned = (total_points / 1000) * 100
         letter_grade = get_letterGrade(average_earned)
+        print('Average score', average_earned)
         print(f"Letter Grade: {letter_grade}")
 
         response = input("Do you want to continue? (yes/no): ")
